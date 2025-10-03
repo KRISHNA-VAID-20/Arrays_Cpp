@@ -397,6 +397,8 @@
 //     return 0;
 // }
 
+// OPTIMAL APPROACH 
+
 #include <bits/stdc++.h>
 using namespace std;
 
