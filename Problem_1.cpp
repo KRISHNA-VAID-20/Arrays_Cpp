@@ -1,3 +1,5 @@
+//1 find maximum and minimum element
+
 #include <iostream>
 using namespace std;
 
