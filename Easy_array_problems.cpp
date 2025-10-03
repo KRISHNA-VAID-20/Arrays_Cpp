@@ -360,3 +360,37 @@
 // }
 
  
+// move all zeroes to end 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter n : ";
+    cin>> n;
+    int arr[n];
+    cout << "Enter " << n << " elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+    vector <int> temp;
+    for(int i=0;i<n;i++){
+        if(arr[i]!=0){
+            temp.push_back(arr[i]);
+        }
+    }
+    int nonz=temp.size();
+    for(int i=0;i<nonz;i++){
+        arr[i]=temp[i];
+    }
+    cout << "New array : ";
+    for(int i=nonz;i<n;i++){
+        arr[i] =0;
+    }
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
