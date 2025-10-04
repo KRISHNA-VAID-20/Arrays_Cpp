@@ -322,3 +322,46 @@ int main(){
     }
     return 0;
 }
+
+// UNION of two sorted arrays  [ BRUTE FORCE ]
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n1,n2;
+    cout << "Enter n1 : ";
+    cin >> n1;
+    int arr1[n1];
+    cout <<"Array 1 - " <<"Enter "<< n1 << " elements : ";
+    for(int i=0;i<n1;i++){
+        cin >> arr1[i];
+    }
+    cout << "Enter n2 : ";
+    cin >> n2;
+    int arr2[n2];
+    cout <<"Array 2 - " <<"Enter "<< n2 << " elements : ";
+    for(int i=0;i<n2;i++){
+        cin >> arr2[i];
+    }
+    set <int> st;
+
+    for(int i=0;i<n1;i++){
+        st.insert(arr1[i]);
+    }
+    for(int i=0;i<n2;i++){
+        st.insert(arr2[i]);
+    }
+    int uni[st.size()];
+    int i =0;
+    for(auto it : st){
+        uni[i++]=it;
+    }
+
+    cout << "Union of Both : " ;
+    for(int i=0;i<st.size();i++){
+        cout << uni[i] << " ";
+    }
+    return 0;
+
+}
