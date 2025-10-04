@@ -258,7 +258,7 @@
 //     return 0;
 // }
 
-// OPTIMAL APPROACH 
+// OPTIMAL APPROACH FOR SAME QUESTION 
 
 #include <bits/stdc++.h>
 using namespace std;
