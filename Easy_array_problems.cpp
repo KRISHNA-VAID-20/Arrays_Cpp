@@ -7,19 +7,19 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     int max,min;
-//     max=min=arr[0];
+//     max=min=arr1[0];
 //     for(int i=0;i<n;i++){
-//         if(arr[i]>max){
-//             max=arr[i];
+//         if(arr1[i]>max){
+//             max=arr1[i];
 //         }
-//         if(arr[i]<min){
-//             min=arr[i];
+//         if(arr1[i]<min){
+//             min=arr1[i];
 //         }
 //     }
 //     cout << "Max : " << max;
@@ -37,20 +37,20 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
-//     int smallest=arr[0];
+//     int smallest=arr1[0];
 //     int slargest=-1;
 //     for(int i=1;i<n;i++){
-//         if(arr[i] > smallest){
+//         if(arr1[i] > smallest){
 //             slargest=smallest;
-//             smallest=arr[i];
+//             smallest=arr1[i];
 //         }
-//         else if(arr[i] < smallest && arr[i] > slargest){
-//             slargest=arr[i];
+//         else if(arr1[i] < smallest && arr1[i] > slargest){
+//             slargest=arr1[i];
 //         }
 //     }
 //     cout << "Largest : " << smallest;
@@ -67,20 +67,20 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
-//     int smallest=arr[0];
+//     int smallest=arr1[0];
 //     int ssmallest=100000;
 //     for(int i=1;i<n;i++){
-//         if(arr[i] < smallest){
+//         if(arr1[i] < smallest){
 //             ssmallest=smallest;
-//             smallest=arr[i];
+//             smallest=arr1[i];
 //         }
-//         else if(arr[i] > smallest && arr[i] < ssmallest){
-//             ssmallest=arr[i];
+//         else if(arr1[i] > smallest && arr1[i] < ssmallest){
+//             ssmallest=arr1[i];
 //         }
 //     }
 //     cout << "Smallest : " << smallest;
@@ -97,14 +97,14 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     int is_sorted=1;
 //     for(int i=1;i<n;i++){
-//         if(arr[i]>=arr[i-1]){
+//         if(arr1[i]>=arr1[i-1]){
 //         }
 //         else{
 //             is_sorted=0;
@@ -129,15 +129,15 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     int i=0;
 //     for(int j=1;j<n;j++){
-//         if(arr[i] != arr[j]){
-//             arr[i+1]=arr[j];
+//         if(arr1[i] != arr1[j]){
+//             arr1[i+1]=arr1[j];
 //             i++;
 //         }
 //     }
@@ -155,18 +155,18 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     cout << "Array Entered : ";
 //     for(int i=0;i<n;i++){
-//         cout << arr[i] << " ";
+//         cout << arr1[i] << " ";
 //     }
 //     set <int > st ;
 //     for(int i=0;i<n;i++){
-//         st.insert(arr[i]);
+//         st.insert(arr1[i]);
 //     }
 //     cout <<"\nNew array : ";
 //     for(auto it : st){
@@ -184,19 +184,19 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
-//     int temp=arr[0];
+//     int temp=arr1[0];
 //     for(int i=1;i<n;i++){
-//         arr[i-1]=arr[i];
+//         arr1[i-1]=arr1[i];
 //     }
-//     arr[n-1]=temp;
+//     arr1[n-1]=temp;
 //     cout << "New Array : ";
 //     for(int i=0;i<n;i++){
-//         cout << arr[i] << " ";
+//         cout << arr1[i] << " ";
 //     }
 //     return 0;
 // }
@@ -209,14 +209,14 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     cout << "Rotated Array : ";
 //     for(int i=n-1;i>=0;i--){
-//         cout << arr[i] << " ";
+//         cout << arr1[i] << " ";
 //     }
 //     return 0;
 // }
@@ -232,27 +232,27 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin>> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     vector <int> temp;
 //     for(int i=0;i<n;i++){
-//         if(arr[i]!=0){
-//             temp.push_back(arr[i]);
+//         if(arr1[i]!=0){
+//             temp.push_back(arr1[i]);
 //         }
 //     }
 //     int nonz=temp.size();
 //     for(int i=0;i<nonz;i++){
-//         arr[i]=temp[i];
+//         arr1[i]=temp[i];
 //     }
 //     cout << "New array : ";
 //     for(int i=nonz;i<n;i++){
-//         arr[i] =0;
+//         arr1[i] =0;
 //     }
 //     for(int i=0;i<n;i++){
-//         cout << arr[i] << " ";
+//         cout << arr1[i] << " ";
 //     }
 
 //     return 0;
@@ -267,27 +267,27 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin>> n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     int j=-1;
 //     for(int i=0;i<n;i++){
-//         if(arr[i]==0){
+//         if(arr1[i]==0){
 //             j=i;
 //             break;
 //         }
 //     }
 //     for(int i=j+1;i<n;i++){
-//         if(arr[i]!=0){
-//             swap(arr[i],arr[j]);
+//         if(arr1[i]!=0){
+//             swap(arr1[i],arr1[j]);
 //             j++;
 //         }
 //     }
 //     cout << "New array : ";
 //     for(int i=0;i<n;i++){
-//         cout << arr[i] << " ";
+//         cout << arr1[i] << " ";
 //     }
 
 //     return 0;
@@ -302,16 +302,16 @@
 //     int n;
 //     cout << "Enter n : ";
 //     cin >>n;
-//     int arr[n];
+//     int arr1[n];
 //     cout << "Enter " << n << " elements : ";
 //     for(int i=0;i<n;i++){
-//         cin >> arr[i];
+//         cin >> arr1[i];
 //     }
 //     int key;
 //     cout << "Enter number to search : ";
 //     cin >> key;
 //     for(int i=0;i<n;i++){
-//         if(arr[i]==key){
+//         if(arr1[i]==key){
 //             cout << "Element "<< key << " found at index : "<< i;
 //             break;
 //         }
@@ -367,6 +367,7 @@
 // }
 
 // // Optimal approach
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -375,51 +376,51 @@ int main(){
     cout << "Enter n1 : ";
     cin >> n1;
     int arr1[n1];
-    cout <<"Array 1 - " <<"Enter "<< n1 << " elements : ";
+    cout << "Enter "<< n1 << " elements : ";
     for(int i=0;i<n1;i++){
         cin >> arr1[i];
     }
     cout << "Enter n2 : ";
     cin >> n2;
     int arr2[n2];
-    cout <<"Array 2 - " <<"Enter "<< n2 << " elements : ";
     for(int i=0;i<n2;i++){
         cin >> arr2[i];
     }
-    vector <int> uniarr;
+    vector <int > unionarray;
     int i=0;
     int j=0;
-    while(i< n1 && j < n2){
-        if(arr1[i]<=arr2[j]){
-            if(uniarr.size()==0 || uniarr.back() != arr1[i]){
-                uniarr.push_back(arr1[i]);
+    while(i<n1 && j <n2){
+        if(arr1[i]<= arr2[j]){
+            if(unionarray.size()==0 || unionarray.back()!=arr1[i]){
+                unionarray.push_back(arr1[i]);
             }
             i++;
         }
         else{
-            if(uniarr.size() ==0 || uniarr.back() != arr2[j]){
-                uniarr.push_back(arr2[j]);
-            }
-            j++;
-            
-        }
-    }
-    while(j<n2){
-        if(uniarr.size() ==0 || uniarr.back() != arr2[j]){
-            uniarr.push_back(arr2[j]);
+            if(unionarray.size()==0 || unionarray.back()!=arr2[j]){
+                unionarray.push_back(arr2[j]);
         }
         j++;
     }
+    }
+    while(j<n2){
+        if(unionarray.size()==0 || unionarray.back()!=arr2[j]){
+            unionarray.push_back(arr2[j]);
+    }
+        j++;
+    }
+
     while(i<n1){
-        if(uniarr.size() ==0 || uniarr.back() != arr1[i]){
-            uniarr.push_back(arr1[i]);
-        }
+        if(unionarray.size()==0 || unionarray.back()!=arr1[i]){
+            unionarray.push_back(arr1[i]);
+    }
         i++;
     }
-    cout << "\nUnion Array : ";
-    for(auto it : uniarr){
+    cout << "Union Array : ";
+    for(auto it : unionarray){
         cout << it << " ";
     }
+    
     return 0;
-}
 
+}
