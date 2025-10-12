@@ -472,7 +472,7 @@ int main(){
 
 }
 
-// Find missing number from array
+// Q - Find missing number from array
 
 // Brute force
 
@@ -483,9 +483,9 @@ int main(){
     int n;
     cout << "Enter n : ";
     cin >> n;
-    int arr[n];
-    cout << "Enter values : ";
-    for(int i=0;i<n;i++){
+    int arr[n-1];
+    cout << "Enter "<< n-1 << " values : ";
+    for(int i=0;i<n-1;i++){
         cin >> arr[i];
     }
     for(int i=1;i<=n;i++){
@@ -504,4 +504,29 @@ int main(){
     return 0;
 
 
+}
+
+// OPTIMAL APPROACH 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,sum,s;
+    cout <<  "Enter n : ";
+    cin >> n;
+    int arr[n-1]; // Becuase we are  finding one missing value in array
+    cout << "Enter " << n-1 << " elements : ";
+    for(int i=0;i<n-1;i++){ // n-1 coz we finding 1 missing value only
+        cin >> arr[i];
+    }
+    sum=n*(n+1)/2;
+    s=0;
+    for(int i=0;i<n-1;i++){
+        s+=arr[i];
+    }
+    int result =sum-s;
+    cout << "Mising Value = " << result;
+    return 0;
+    
 }
