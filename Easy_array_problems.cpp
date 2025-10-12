@@ -530,3 +530,35 @@ int main(){
     return 0;
     
 }
+
+// Q Max Consecutive ones
+
+ // No brute force direct Optimal Approach 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter " << n << " elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+    int count =0;
+    int maximum=0;
+    for(int i=0;i<n;i++){
+        if (arr[i] ==1){
+            count +=1;
+            maximum=max(maximum,count); // max used to retuen maximum num between maximum and count 
+        }
+        else{
+            count =0;
+        }
+    }
+    cout << "Max consecutive ones : " << maximum;
+    return 0;
+
+}
