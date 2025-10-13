@@ -562,3 +562,97 @@ int main(){
     return 0;
 
 }
+
+Number that appears only once
+Brute Force
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter "<<n <<" elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    } 
+    cout << "Entered elements : ";
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+    for(int i=0;i<n;i++){
+        int num= arr[i];
+        int count=0;
+        for(int j=0;j<n;j++){
+            if(arr[j]==num){
+                count +=1;
+            }
+        }
+        if(count ==1){
+            cout <<"\nAppeared once : " <<arr[i] ;
+        }
+    }
+    return 0;
+}
+
+Better way -> Using Hashing
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter "<<n <<" elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    } 
+    cout << "Entered elements : ";
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+    int maxi=arr[0];
+    for(int i=0;i<n;i++){
+        maxi=max(maxi,arr[i]);
+    }
+    int hash[maxi]={0};
+    for(int i=0;i<n;i++){
+        hash[arr[i]]++;
+    }
+    for(int i=0;i<n;i++){
+        if(hash[arr[i]]==1){
+            cout << "\nAppeared once : "<<arr[i];
+        }
+    }
+    return 0;
+}
+
+// Optimal Approach Using Xor
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter "<<n <<" elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    } 
+    cout << "Entered elements : ";
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+    int Xor=0;
+    for(int i=0;i<n;i++){
+        Xor=Xor^arr[i];
+    }
+    cout << "\nAppeared once : "<<Xor;
+    return 0;
+}
