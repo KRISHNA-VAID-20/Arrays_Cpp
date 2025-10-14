@@ -563,8 +563,8 @@ int main(){
 
 }
 
-Number that appears only once
-Brute Force
+// Number that appears only once
+// Brute Force
 
 #include <iostream>
 using namespace std;
@@ -597,7 +597,7 @@ int main(){
     return 0;
 }
 
-Better way -> Using Hashing
+// Better way -> Using Hashing
 
 #include <iostream>
 using namespace std;
