@@ -28,33 +28,32 @@ int main(){
 
 }
 
-// // 2 Second smallest element
-
+// // 2 Second largest element
 #include <iostream>
 using namespace std;
 
 int main(){
     int n;
     cout << "Enter n : ";
-    cin >> n;
-    int arr1[n];
-    cout << "Enter " << n << " elements : ";
-    for(int i=0;i<n;i++){
-        cin >> arr1[i];
+    cin >>n;
+    int arr[n];
+    cout << "Enter " << n << " Elements : ";
+    for(int  i=0;i<n;i++){
+        cin >> arr[i];
     }
-    int smallest=arr1[0];
-    int slargest=-1;
+    int max=arr[0];
+    int sl=-1;
     for(int i=1;i<n;i++){
-        if(arr1[i] > smallest){
-            slargest=smallest;
-            smallest=arr1[i];
+        if(arr[i]> max ){
+            sl=max;
+            max=arr[i];
         }
-        else if(arr1[i] < smallest && arr1[i] > slargest){
-            slargest=arr1[i];
+        else if(arr[i] < max && arr[i] > sl){
+            sl =arr[i];
         }
     }
-    cout << "Largest : " << smallest;
-    cout << "\nSecond smallest : " << slargest;
+    cout << "Max : " << max << endl;
+    cout << "2nd Max : " << sl;
     return 0;
 }
 
