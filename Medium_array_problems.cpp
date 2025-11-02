@@ -1,4 +1,5 @@
 // 1 - Two sum 
+// Brute Force Approach
 #include <iostream>
 using namespace std;
 
