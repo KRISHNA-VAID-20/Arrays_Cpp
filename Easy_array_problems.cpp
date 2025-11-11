@@ -87,7 +87,7 @@ int main(){
     return 0;
 }
 
-// //3 check arry is sorted ??
+// //3 check array is sorted ??
 
 #include <iostream>
 using namespace std;
@@ -119,7 +119,7 @@ int main(){
 
 }
 
-// //4 Remove duplicates from array 
+// //4 Remove duplicates from array [ Optimal approach]
 
 #include <iostream>
 using namespace std;
