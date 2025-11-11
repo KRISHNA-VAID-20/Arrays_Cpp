@@ -200,25 +200,37 @@ int main(){
     return 0;
 }
 
-// //6 Left rotate by D places
-
-#include <iostream>
+// //6 Left (right) rotate by D places (optimal approach)
+#include <bits/stdc++.h>
 using namespace std;
+
 int main(){
     int n;
     cout << "Enter n : ";
-    cin >> n;
-    int arr1[n];
-    cout << "Enter " << n << " elements : ";
+    cin >>n;
+    int arr[n];
+    cout << "Enter "<<n << " elements : ";
     for(int i=0;i<n;i++){
-        cin >> arr1[i];
+        cin >> arr[i];
     }
-    cout << "Rotated Array : ";
-    for(int i=n-1;i>=0;i--){
-        cout << arr1[i] << " ";
+    int k;
+    cout << "Enter k : ";
+    cin >> k;
+    k=k%n;
+    // reverse(arr,arr+n); // for right roattaion
+    // reverse(arr,arr+k);
+    // reverse(arr+k,arr+n);
+    reverse(arr,arr+k); // for left roattaion
+    reverse(arr+k,arr+n);
+    reverse(arr,arr+n);
+    cout << "Roatated by "<< k << " places : "<<endl;
+    for(int i=0;i<n;i++){
+        cout << arr[i];
     }
     return 0;
 }
+
+
 
 //7-  move all zeroes to end 
 
