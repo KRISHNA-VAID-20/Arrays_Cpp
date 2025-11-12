@@ -363,18 +363,17 @@ int main(){
     for(int i=0;i<n2;i++){
         st.insert(arr2[i]);
     }
-    int uni[st.size()];
+    int arr3[st.size()];
     int i =0;
     for(auto it : st){
-        uni[i++]=it;
+        arr3[i++]=it;
     }
 
     cout << "Union of Both : " ;
-    for(int i=0;i<st.size();i++){
-        cout << uni[i] << " ";
+    for(i=0;i<st.size();i++){
+        cout << arr3[i] << " ";
     }
-    return 0;
-
+ 
 }
 
 // // Optimal approach
