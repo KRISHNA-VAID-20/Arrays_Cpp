@@ -81,7 +81,7 @@ int main(){
     return 0;
 }
 
-// optimal approach using DUTCH NATIONAL FLAG ALGORITHM
+// optimal approach using (DUTCH NATIONAL FLAG ALGORITHM)
 
 #include <iostream>
 using namespace std;
