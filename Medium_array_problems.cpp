@@ -121,3 +121,52 @@ int main(){
     }
     return 0;
 }
+
+// Moore's algorithm (Optimal solution)
+// Majority element (> n/2 ) times 
+
+#include <iostream>
+using  namespace std;
+
+int main(){
+    int n;
+    cout << "N : ";
+    cin >>n;
+    int arr[n];
+    cout << "Enter "<< n  <<" elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    } 
+
+    int cnt=0;
+    int ele;
+
+    for(int i=0;i<n;i++){
+        if(cnt==0){
+            cnt=1;
+            ele=arr[i];
+        }
+        else if(arr[i]==ele){
+            cnt++;
+        }
+        else{
+            cnt --;
+        }
+    }
+    int cnt1=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]==ele){
+            cnt1++;
+        }
+    }
+    if(cnt1>n/2){
+        cout << ele << " appeared "<< cnt1 << " times " << endl;
+    }else{
+
+        cout << "No elements appeared more than " << n/2 << " times";
+    }
+
+    return 0;
+
+
+}
