@@ -170,3 +170,39 @@ int main(){
 
 
 }
+
+// Kadane's Algorithm 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "N : ";
+    cin >>n;
+    int arr[n];
+    cout << "Enter "<< n  <<" elements : ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+
+    int sum=0;
+    int maxi=INT_MIN;
+
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+
+        if(sum>maxi){
+            maxi=sum;
+        }
+
+        if(sum<0){
+            sum=0;
+        }
+    }
+    cout << "Max sub array : "<< maxi;
+
+    return 0;
+
+
+}
